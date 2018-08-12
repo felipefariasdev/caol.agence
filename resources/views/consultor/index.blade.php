@@ -1,0 +1,1 @@
+index consultor <?php echo ($nome); ?>
