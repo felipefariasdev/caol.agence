@@ -69,7 +69,7 @@
                 <div class="col-8">
 
                 <p>
-
+                    <a href="http://www.felipefarias.kinghost.net/instrucoes.pdf" target="_blank">Clique aqui</a> para instruções em pdf.<br /><br />
 
                     Esse teste nos permitirá entender melhor seus conhecimentos em certas áreas e suas habilidades técnicas.<br /><br />
 
