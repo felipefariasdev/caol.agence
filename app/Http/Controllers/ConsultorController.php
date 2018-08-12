@@ -15,7 +15,7 @@ class ConsultorController extends Controller
     public function index()
     {
         $data = array("nome"=>"Felipe");
-        return view('cliente/index',$data);
+        return view('consultor/index',$data);
     }
 
     /**
