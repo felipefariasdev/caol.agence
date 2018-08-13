@@ -19,3 +19,9 @@ Para acesso ao banco de dados.
 ### Backup do Banco de dados
 
 - https://github.com/felipefariasdev/caol.agence/blob/master/database/bkp/db.sql.sql
+
+### Data e hora Início / Fim
+
+- 11/08/2018 as 23:40hrs inicio da importação do banco de dados.
+- 12/08/2018 00:40hrs primeiro commit.
+- 13/08/2018 07:10 último commit.
