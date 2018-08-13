@@ -14,5 +14,5 @@
 Route::get('/', function () {
     return view('home');
 });
-Route::resource('consultor', 'ConsultorController');
-Route::resource('cliente', 'ClienteController');
+Route::get('cliente', 'RelatoriosController@valorLiquidoCliente');
+Route::get('consultor', 'RelatoriosController@relatorioConsultor');

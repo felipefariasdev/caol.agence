@@ -33,17 +33,13 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cliente</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="/cliente">Lista</a>
-                    <a class="dropdown-item" href="#">Relatório</a>
-                    <a class="dropdown-item" href="#">Gráfico</a>
+                    <a class="dropdown-item" href="/cliente">Relatório</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultor</a>
+                <a class="nav-link dropdown-toggle disabled" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultor</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="/consultor">Lista</a>
-                    <a class="dropdown-item" href="#">Relatório</a>
-                    <a class="dropdown-item" href="#">Gráfico</a>
+                    <a class="dropdown-item" href="/consultor">Relatório</a>
                 </div>
             </li>
         </ul>

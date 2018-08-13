@@ -1,6 +1,3 @@
 @extends('layouts.app')
 <div class="container">
-
-index cliente <?php echo ($nome); ?>
-
-</div>
+    <h3>Consultor / Relatório</h3>
