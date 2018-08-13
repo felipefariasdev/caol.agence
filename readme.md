@@ -13,5 +13,9 @@ Para acesso ao banco de dados.
 
 - Host para conexão: **[http://mysql.felipefarias.kinghost.net/](http://mysql.felipefarias.kinghost.net/)**
 - Usuario: felipefarias
-- Senha: *****
+- Senha: caol123
 - Nome da base: felipefarias
+
+### Backup do Banco de dados
+
+- https://github.com/felipefariasdev/caol.agence/blob/master/database/bkp/db.sql.sql
