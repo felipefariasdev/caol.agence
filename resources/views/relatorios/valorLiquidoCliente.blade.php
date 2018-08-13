@@ -35,6 +35,10 @@
         <?php
         $total_geral_faturamento_liquido = 0;
         $key=1;
+        $total_geral_faturamento_liquido_janeiro = 0;
+        $total_geral_faturamento_liquido_fevereiro = 0;
+        $total_geral_faturamento_liquido_marco = 0;
+        $total_geral_faturamento_liquido_abril = 0;
         foreach($valorLiquidoCliente as $v):
         ?>
 
@@ -69,27 +73,53 @@
 
                 <td>
 
-                    <?php if($key==1 && $v->mes=='January'){
+                    <?php
+
+                        if($v->mes=='January'){
+                            $total_geral_faturamento_liquido_janeiro += $v->total_faturamento_liquido;
+                        }
+                    if($v->mes=='February'){
+                        $total_geral_faturamento_liquido_fevereiro += $v->total_faturamento_liquido;
+                    }
+                    if($v->mes=='March'){
+                        $total_geral_faturamento_liquido_marco += $v->total_faturamento_liquido;
+                    }
+                    if($v->mes=='April'){
+                        $total_geral_faturamento_liquido_abril += $v->total_faturamento_liquido;
+                    }
+
+
+
+                    if($key==1 && $v->mes=='January'){
                         echo "<span style='background-color: #005cbf;color:#e2e3e5'>";
                         $key++;
+
                     }else{
 
                         $style='';
                     }
+
                     ?>
-                    <?php if($key==2 && $v->mes=='February' && $style==''){
+                    <?php
+                    $qtdFevereiro=0;
+                    if($key==2 && $v->mes=='February' && $style==''){
                         echo "<span style='background-color: #005cbf;color:#e2e3e5'>";
                         $key++;
+                        $qtdFevereiro++;
                     }else{
 
                         $style='';
+                        $qtdFevereiro++;
                     } ?>
 
-                    <?php if($key==3 && $v->mes=='March' && $style==''){
+                    <?php
+                    $qtdMarco=0;
+                    if($key==3 && $v->mes=='March' && $style==''){
                         echo "<span style='background-color: #005cbf;color:#e2e3e5'>";
                         $key++;
+                        $qtdMarco++;
                     }else{
-                        $style='';
+                        $qtdMarco++;
 
                     } ?>
                     <?php if($key==4 && $v->mes=='April' && $style==''){
@@ -146,6 +176,11 @@
                 </td>
                 <td>{{$v->mes}}</td>
             </tr>
+
+
+
+
+
         <?php
             $total_geral_faturamento_liquido +=$v->total_faturamento_liquido;
             endforeach;
@@ -166,5 +201,38 @@
         </tfoot>
 
     </table>
+
+        <h3>Resumo de cada mês</h3>
+
+        <div class="bd-example">
+            <table class="table">
+            <thead>
+            <tr>
+                <th scope="row">MÊS</th>
+                <th>R$ TOTAL LIQUIDO</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td scope="row">JANEIRO</td>
+                <td>R$ {{ number_format($total_geral_faturamento_liquido_janeiro, 2, ',', '.') }}</td>
+            </tr>
+            <tr>
+                <td scope="row">FEVEREIRO</td>
+                <td>R$ {{ number_format($total_geral_faturamento_liquido_fevereiro, 2, ',', '.') }}</td>
+            </tr>
+            <tr>
+                <td scope="row">MARÇO</td>
+                <td>R$ {{ number_format($total_geral_faturamento_liquido_marco, 2, ',', '.') }}</td>
+            </tr>
+            <tr>
+                <td scope="row">ABRIL</td>
+                <td>R$ {{ number_format($total_geral_faturamento_liquido_abril, 2, ',', '.') }}</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+
     </div>
 </div>

@@ -1,4 +1,4 @@
-<p align="center"><img src="http://www.agence.com.br/wp-content/themes/dt-the7/inc/presets/images/agence/agence.png"></p>
+<img src="http://www.agence.com.br/wp-content/themes/dt-the7/inc/presets/images/agence/agence.png">
 
 
 ## Teste Prático - Desenvolvedor PHP
