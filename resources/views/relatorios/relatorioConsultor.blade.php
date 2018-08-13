@@ -1,3 +1,6 @@
 @extends('layouts.app')
-<div class="container">
+@section('content')
+
     <h3>Consultor / Relatório</h3>
+
+@stop
