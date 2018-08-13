@@ -5,13 +5,13 @@
 
 ### Aplicação
 
-- Link de acesso: **[felipefarias.kinghost.net](felipefarias.kinghost.net)**
+- Link de acesso: **[http://felipefarias.kinghost.net](http://felipefarias.kinghost.net)**
 
 ### Banco de dados
 
 Para acesso ao banco de dados.
 
-- Host para conexão: **[mysql.felipefarias.kinghost.net/](mysql.felipefarias.kinghost.net/)**
+- Host para conexão: **[http://mysql.felipefarias.kinghost.net/](http://mysql.felipefarias.kinghost.net/)**
 - Usuario: felipefarias
 - Senha: *****
 - Nome da base: felipefarias
