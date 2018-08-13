@@ -16,6 +16,19 @@
                 <?php }?>
             </select>
         </div>
+
+        <div class="form-group">
+            <label for="exampleSelect1">Selecione o Cliente</label>
+            <select class="form-control" name="no_fantasia">
+                <option value="">Todos</option>
+                <?php foreach($cliente as $v) {?>
+                    <?php if($v->no_fantasia){?>
+                        <option <?php if($no_fantasia==$v->no_fantasia) echo 'selected';?>><?php echo $v->no_fantasia?></option>
+                    <?php }?>
+                <?php }?>
+            </select>
+        </div>
+
         <button type="submit" class="btn btn-primary">Buscar</button>
     </form>
 
